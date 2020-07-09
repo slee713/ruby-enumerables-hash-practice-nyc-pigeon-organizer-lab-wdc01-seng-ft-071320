@@ -1,53 +1,7 @@
-require 'pry'
+#require 'pry'
 def nyc_pigeon_organizer(data)
   # # write your code here!
-#   names = []
-#   categories = {}
-#   color = {}
-#   gender = {}
-#   lives = {}
-#   pigeon_list = {}
-#
-#   data.each do |key, value|
-#     categories[key] = ""
-#   end
-#   binding.pry
-#
-#   data.each do |key, value|
-#     if key == :color
-#       color = value
-#     elsif key == :gender
-#       gender = value
-#     else key == :lives
-#       lives = value
-#     end
-#   end
-# binding.pry
-#
-#   data.each do |key, value|
-#     value.each do |inner_key, inner_value|
-#       inner_value.each do |elements|
-#         if names.include? elements
-#         else
-#           names.push(elements)
-#         end
-#       end
-#     end
-#   end
-#
-# binding.pry
-#
-#
-#   names.each do |element|
-#     pigeon_list[element]=""
-#   end
-#
-#   pigeon_list.each do |key, value|
-#     pigeon_list[key] = categories
-#   end
-#
-#
-# binding.pry
+
 
 final_results = data.each_with_object({}) do |(key, value), final_array|
   value.each do |inner_key, names|
@@ -62,7 +16,7 @@ final_results = data.each_with_object({}) do |(key, value), final_array|
     end
   end
 end
-binding.pry
+# binding.pry
 
 end
 
